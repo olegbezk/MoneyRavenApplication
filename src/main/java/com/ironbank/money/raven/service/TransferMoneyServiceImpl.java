@@ -5,6 +5,10 @@ import com.ironbank.money.raven.model.Bank;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 @RequiredArgsConstructor
 public class TransferMoneyServiceImpl implements TransferMoneyService {
@@ -25,5 +29,12 @@ public class TransferMoneyServiceImpl implements TransferMoneyService {
         moneyDao.save(bank);
 
         return 0;
+    }
+
+    @Override
+    public List<String> getBankCreditors(final String... names) {
+        return Arrays.stream(names)
+                .map(name -> moneyDao.findByName(name).getName())
+                .collect(Collectors.toList());
     }
 }

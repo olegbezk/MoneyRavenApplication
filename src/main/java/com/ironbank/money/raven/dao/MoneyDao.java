@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface MoneyDao extends JpaRepository<Bank, String> {
 
+    Bank findByName(String name);
 }
