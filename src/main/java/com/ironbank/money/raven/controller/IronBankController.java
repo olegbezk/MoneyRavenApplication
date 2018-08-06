@@ -1,6 +1,7 @@
 package com.ironbank.money.raven.controller;
 
 import com.ironbank.money.raven.dao.MoneyDao;
+import com.ironbank.money.raven.model.Bank;
 import com.ironbank.money.raven.service.TransferMoneyService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,8 +37,8 @@ public class IronBankController {
         return moneyDao.findAll().get(0).getAmount();
     }
 
-    @GetMapping("/creditors/{names}")
-    public List<String> creditors(@PathVariable String[] names) {
+    @GetMapping("/creditors/{names}") // http://localhost:8080/creditors/<name_1>,<name_2>,...
+    public List<Bank> creditors(@PathVariable String[] names) {
         return transferMoneyService.getBankCreditors(names);
     }
 }

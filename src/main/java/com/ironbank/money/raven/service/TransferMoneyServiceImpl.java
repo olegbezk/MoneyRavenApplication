@@ -32,9 +32,9 @@ public class TransferMoneyServiceImpl implements TransferMoneyService {
     }
 
     @Override
-    public List<String> getBankCreditors(final String... names) {
+    public List<Bank> getBankCreditors(final String... names) {
         return Arrays.stream(names)
-                .map(name -> moneyDao.findByName(name).getName())
+                .map(moneyDao::findByName)
                 .collect(Collectors.toList());
     }
 }
