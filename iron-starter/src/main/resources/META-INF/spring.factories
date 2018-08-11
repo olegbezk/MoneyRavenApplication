@@ -1,1 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.ironbank.money.raven.IronConfiguration
+
+org.springframework.context.ApplicationContextInitializer=com.ironbank.money.raven.context.CustomApplicationContextInitializer
+
+org.springframework.boot.env.EnvironmentPostProcessor=com.ironbank.money.raven.context.ProfileDetectorEnvPostProcessor
