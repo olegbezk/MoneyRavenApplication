@@ -24,7 +24,7 @@ public class IronBankController {
     public String credit(@RequestParam String name, @RequestParam long amount) {
         final long transfer = transferMoneyService.transfer(name, amount);
         if (transfer == -1) {
-            return "Redirect <br/>" + name + " <b>will not</br> survive this winter";
+            return "Redirect <br/>" + name + " <b>will not</b> survive this winter";
         }
         return MessageFormat.format("<i>Credit approved for {0}</i> <br/> Current credit in bank: <b>{1}</b>",
                 name,
