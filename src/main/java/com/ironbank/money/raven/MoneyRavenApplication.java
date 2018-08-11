@@ -11,6 +11,6 @@ public class MoneyRavenApplication {
 
 	public static void main(String[] args) {
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(MoneyRavenApplication.class);
-		builder.headless(false).run(args); // fix for java.awt.HeadlessException throwing
+		builder.headless(false).run(args); // fix from java.awt.HeadlessException throwing
 	}
 }
