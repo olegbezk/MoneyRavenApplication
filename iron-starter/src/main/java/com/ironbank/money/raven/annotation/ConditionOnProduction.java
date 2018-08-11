@@ -6,7 +6,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Conditional(OnConditionOnProduction.class)
+@Conditional(OnProductionCondition.class)
 public @interface ConditionOnProduction {
 
 }
