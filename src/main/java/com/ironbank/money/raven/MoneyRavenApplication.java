@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
-//@EnableConfigurationProperties(ProphetProperties.class)
+@EnableConfigurationProperties(ProphetProperties.class)
 public class MoneyRavenApplication {
 
 	public static void main(String[] args) {

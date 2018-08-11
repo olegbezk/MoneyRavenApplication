@@ -41,4 +41,9 @@ public class IronBankController {
     public List<Bank> creditors(@PathVariable String[] names) {
         return transferMoneyService.getBankCreditors(names);
     }
+
+    @GetMapping("/creditors")
+    public List<Bank> getCreditors(@RequestParam(value = "name") String... names) {
+        return transferMoneyService.getBankCreditors(names);
+    }
 }

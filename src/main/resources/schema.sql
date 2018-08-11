@@ -1,8 +1,8 @@
 
 create table bank
 (
-   id integer not null,
+   id bigint not null auto_increment,
    name varchar(255) not null,
-   amount integer not null,
+   amount bigint not null,
    primary key(id)
 );

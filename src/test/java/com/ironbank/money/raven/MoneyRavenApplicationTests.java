@@ -1,4 +1,4 @@
-package com.ironbank.money.raven.MoneyRavenApplication;
+package com.ironbank.money.raven;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
