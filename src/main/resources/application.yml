@@ -9,3 +9,7 @@ spring:
 
 iron-bank:
   those-who-returns-loans-back: Lannisters
+
+raven:
+  where: Braavos, main branch
+  enabled: true
