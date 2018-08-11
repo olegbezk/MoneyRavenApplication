@@ -10,7 +10,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class ProphetProperties {
 
     /**
-     * Those who give loans back.
+     * Those who returns loans back.
      */
-    private String those_who_give_loans_back;
+    private String those_who_returns_loans_back;
 }

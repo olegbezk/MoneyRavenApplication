@@ -1,1 +1,3 @@
 rootProject.name = 'MoneyRavenApplication'
+include 'iron-strarter'
+

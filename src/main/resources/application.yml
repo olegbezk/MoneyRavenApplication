@@ -8,4 +8,4 @@ spring:
       ddl-auto: validate
 
 iron-bank:
-    those-who-give-loans-back: Lannisters
+  those-who-returns-loans-back: Lannisters
